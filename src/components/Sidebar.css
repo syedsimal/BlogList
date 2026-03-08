@@ -1,0 +1,192 @@
+.sidebar {
+    position: sticky;
+    top: calc(var(--navbar-height) + 24px);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.sidebar__section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 28px;
+}
+
+.sidebar__heading {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gold-primary);
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Categories */
+.sidebar__categories {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sidebar__cat-btn {
+    width: 100%;
+    text-align: left;
+    padding: 10px 14px;
+    background: none;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.sidebar__cat-btn:hover {
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+    padding-left: 20px;
+}
+
+.sidebar__cat-btn--active {
+    background: var(--gold-muted);
+    color: var(--gold-primary);
+    font-weight: 500;
+}
+
+/* Popular Posts */
+.sidebar__popular {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sidebar__popular-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: var(--radius-sm);
+    transition: background var(--transition-fast);
+}
+
+.sidebar__popular-item:hover {
+    background: var(--bg-elevated);
+}
+
+.sidebar__popular-num {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--gold-dark);
+    opacity: 0.5;
+    line-height: 1;
+    min-width: 28px;
+}
+
+.sidebar__popular-title {
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.4;
+    margin-bottom: 4px;
+}
+
+.sidebar__popular-item:hover .sidebar__popular-title {
+    color: var(--gold-primary);
+}
+
+.sidebar__popular-date {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+/* Tags */
+.sidebar__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.sidebar__tag {
+    padding: 6px 14px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.sidebar__tag:hover {
+    background: var(--gold-muted);
+    border-color: var(--gold-primary);
+    color: var(--gold-primary);
+}
+
+/* Newsletter */
+.sidebar__newsletter {
+    background: linear-gradient(145deg, var(--bg-card), rgba(212, 175, 55, 0.05));
+    border-color: var(--border-gold);
+    text-align: center;
+}
+
+.sidebar__newsletter-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.sidebar__newsletter-title {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.sidebar__newsletter-text {
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    margin-bottom: 16px;
+}
+
+.sidebar__newsletter-input {
+    width: 100%;
+    padding: 12px 16px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-size: 0.88rem;
+    font-family: var(--font-body);
+    outline: none;
+    margin-bottom: 12px;
+    transition: border-color var(--transition-fast);
+}
+
+.sidebar__newsletter-input:focus {
+    border-color: var(--gold-primary);
+}
+
+.sidebar__newsletter-input::placeholder {
+    color: var(--text-muted);
+}
+
+.sidebar__newsletter-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px;
+    font-size: 0.88rem;
+}
+
+@media (max-width: 900px) {
+    .sidebar {
+        position: static;
+    }
+}
