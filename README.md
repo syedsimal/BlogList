@@ -11,7 +11,7 @@ A **professional blog listing website** built with React + Vite, featuring a pre
 | **Homepage** | Hero section with animated headline, stats, featured article, and latest articles grid |
 | **Blog List** | All articles with search, category filtering, sidebar with tags and newsletter |
 | **Blog Post** | Full article view with hero image, author bio, share buttons, and related posts |
-| **About** | Mission statement, site statistics, core values, and team member profiles |
+| **About** | Mission statement, -----site statistics, core values, and team member profiles |
 
 ---
 
